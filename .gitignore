@@ -1,0 +1,6 @@
+#Ignore specific stuff
+*.lnk
+/dist
+
+#Ignore npm stuff
+/node_modules
