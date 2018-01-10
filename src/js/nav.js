@@ -1,3 +1,5 @@
+import $ from "jquery";
+
 $(()=>{
   $("nav li").on("click", (e)=>{
     let jEl = $(e.target);
