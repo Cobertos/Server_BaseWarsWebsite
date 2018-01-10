@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+$bg-color: #555;
+
+body {
+  margin:0;
+  padding:0;
+  font-family:"Quicksand", Arial, sans-serif;
+  font-size:30px;
+  color:#FFF;
+  background-image:url("https://image.ibb.co/m90hbm/5ikgD2B.png");
+  background-size:100%;
+  margin-left:270px;
+}
+
+section.title {
+  text-align:center;
+}
+section > h1 {
+  font-size:3em;
+  margin:0.2em;
+  display:inline-block;
+}
+
+nav {
+  float:left;
+  margin-right:40px;
+  
+  & > ul {
+    text-align:right;
+    list-style:none;
+    margin:0;
+    padding:0;
+
+    & li {
+      display:inline-block;
+      background-color: rgba($bg-color,0.4);
+      margin-bottom:10px;
+      padding:10px;
+      cursor:pointer;
+      
+      transition:background-color 0.1s ease-out;
+      &:hover {
+        transition:background-color 0.1s ease-in;
+        background-color:#777;
+      }
+      &:active {
+        background-color:#CCC;
+        transition:background-color 0.0s;
+      }
+      &.navActive {
+        color:#FFFF00;
+      }
+    }
+  }
+}
+
+main {
+  margin-right:40px;
+  overflow:hidden; //Take up rest of space, create BFC
+  
+  & > article {
+    padding:10px;
+    background-color: $bg-color;
+    opacity:0;
+    display:none;
+    
+    &.navActive {
+      opacity:1;
+      display:block;
+    }
+    
+    & > *:first-child {
+      margin-top:0;
+    }
+    & > *:last-child {
+      margin-bottom:0;
+    }
+    
+    //Content
+    & table {
+      & td {
+        padding:10px;
+      }
+      & tr:nth-child(odd) {
+        background-color:#666;
+      }
+      & tr:nth-child(even) {
+        background-color:#777;
+      }
+      & td:first-child {
+        font-family:monospace;
+      }
+      & td:nth-child(2) {
+        padding-left:10px;
+      }
+    }
+  }
+}
