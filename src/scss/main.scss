@@ -1,8 +1,11 @@
+@import "howToPlay";
+
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
 
 $bg-color: #555;
 
 body {
+  overflow-y: scroll; //Short pages always show scroll bar
   margin:0;
   padding:0;
   font-family:"Quicksand", Arial, sans-serif;
@@ -96,4 +99,8 @@ main {
       }
     }
   }
+}
+
+code {
+  background-color:#808080;
 }
