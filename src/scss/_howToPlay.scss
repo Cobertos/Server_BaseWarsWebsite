@@ -1,48 +1,57 @@
-.phases {
-  text-align:center;
+.howToPlay {
+  & > img {
+    max-width:100%;
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+  }
 
-  & > * {
-    display:inline-block;
-    width:46%;
-    margin:5px;
-    padding:10px;
-    border-style:solid;
-    border-width:3px;
+  .phases {
+    text-align:center;
 
-    &:first-child {
-      border-color:#F00;
-    }
-    &:nth-child(2) {
-      border-color:#00F;
-    }
+    & > * {
+      display:inline-block;
+      width:46%;
+      margin:5px;
+      padding:10px;
+      border-style:solid;
+      border-width:3px;
 
-    & > p {
-      text-align:left;
-      font-size:0.7em;
+      &:first-child {
+        border-color:#F00;
+      }
+      &:nth-child(2) {
+        border-color:#00F;
+      }
+
+      & > p {
+        text-align:left;
+        font-size:0.7em;
+      }
     }
   }
-}
 
-.machines {
-  text-align:center;
+  .machines {
+    text-align:center;
 
-  & > * {
-    margin:5px;
-    padding:10px;
-    border-style:solid;
-    border-width:3px;
-    border-color:#AAA;
-    display:inline-block;
-    width:29%;
+    & > * {
+      margin:5px;
+      padding:10px;
+      border-style:solid;
+      border-width:3px;
+      border-color:#AAA;
+      display:inline-block;
+      width:29%;
 
-    & > p {
-      text-align:left;
-      font-size:0.7em;
-    }
-    & > img {
-      width:95%;
-      margin-left:auto;
-      margin-right:auto;
+      & > p {
+        text-align:left;
+        font-size:0.7em;
+      }
+      & > img {
+        width:45%;
+        margin-left:auto;
+        margin-right:auto;
+      }
     }
   }
 }
