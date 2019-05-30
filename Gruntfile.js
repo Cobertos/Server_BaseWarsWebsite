@@ -1,7 +1,7 @@
 module.exports = function(grunt) {
 
 	var SRC_DIR = "src"; //Source directory
-	var DIST_DIR = "dist"; //Distribution directory
+	var DIST_DIR = "docs"; //Distribution directory
 	
 	grunt.initConfig({
 		webpack: {

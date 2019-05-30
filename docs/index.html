@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="css/main.css" type="text/css">
+  <script type="text/javascript" src="js/main.js"></script>
+  <title>Base Raiders Information</title>
+</head>
+<body>
+<section class="title">
+  <h1>Base Raiders</h1>  
+</section>
+<nav>
+  <ul>
+    <li class="navActive" data-navClass="rules">Rules</li><br>
+    <li data-navClass="howToPlay">How To Play</li><br>
+    <li data-navClass="commands">Commands</li>
+  </ul>
+</nav>
+<main class="content">
+  <article class="rules navActive">
+    <h2>Rules:</h2>
+    <ol>
+      <li>Do not leave the map.</li>
+      <li>No building out of the map or in impossible to reach places.</li>
+      <li>Do not block other people's doors/doorways with bricks.</li>
+      <li>Do not build in other people's bases (Building over them or around them is fine as long as it doesn't break rule 3.)</li>
+      <li>Anything outside of a map building (aka a building part of the map) is considered 'no mans land' and rule 4 doesn't apply.</li>
+      <li>No glitching through bricks.</li>
+      <li>Do not stick around the spawn and hammer people</li>
+      <li>No racism, cursing a ton, or bullying</li>
+    </ol>
+  </article>
+  <article class="howToPlay">
+    <h2>How to play:</h2>
+
+    <h3>1. Joining a gang</h3>
+    <p>
+    While you can still wreak havok and print money without a gang, it's no fun to be alone.
+    The first thing you should do is either create your own gang with <code>/CreateGang [GangName]</code> or have a friend
+    who's already in a gang invite you with <code>/InviteToGang [Your Name]</code>. You can accept the invitation with <code>/JoinGang</code>
+    </p>
+    <p>
+    You can see who's a part of your gang with <code>/Gang</code>
+    </p>
+
+    <h3>2. Building your base</h3>
+    <p>
+    Once you're part of a gang, you'll want to make a base. This is to create a safe place to print money and participate in other illicit activities. However, you must wait for a Build phase to build.
+    </p>
+
+    <div class="phases">
+      <div>
+        <h5>Build Phase</h5>
+        <p>Build or repair your base. You won't be allowed to kill people during this phase.</p>
+      </div>
+      <div>
+        <h5>Fight Phase</h5>
+        <p>Destroy bricks and damage others. Your goal is to destroy their printers and other items to get money, power, and resources.</p>
+      </div>
+    </div>
+
+    <p>
+    Both of these phases are displayed at the bottom of your screen
+    </p>
+    <img style="width:75%;" src="img/bottomPrintPhase.png">
+    <p>
+    Make sure you pick a secluded area where people won't find you and camoflague your base as much as you can. Use special barricade bricks (found in the "Base Raiders" brick tab) which have more armor than normal bricks and can take more damage. Armor is displayed as the name of the brick in the brick menu.
+    </p>
+    <img src="img/barracades.png">
+    <p>
+    Painting barracades is also allowed so use that to your advantage. Barracades have health based on their armor which can be viewed in the bottom print while looking at a specific barracade. Use the printer to heal barracades.
+    </p>
+
+    <p>
+    Another useful feature is the <code>/MakeDoor [Open Time in milliseconds]</code> command which changes any brick you're looking at into a door. This door will only be able to be opened by your gang.
+    </p>
+
+    <h3>3. Making Machines</h3>
+
+    <img style="width:50%;" src="img/machines.png">
+
+    <p>
+    Once you have a strong base (or whatever you could afford) it's best to fill it with machines. These are special bricks that cost quite a bit of money but provide a worthwhile service
+    </p>
+
+    <div class="machines">
+      <div>
+        <img src="img/itemBarrel.png">
+        <img src="img/itemBarrelSmall.png">
+        <h5>Barrels</h5>
+        <p>Power: None</p>
+        <p>Wrench a barrel and set an item. The barrel will slowly fill with items at a discount from their normal price. Clicking a barrel will extract its items. Using <code>/Put</code> will put an item of the same type back in.</p>
+      </div>
+      <div>
+        <img src="img/printer1.png">
+        <img src="img/printer2.png">
+        <img src="img/printer3.png">
+        <img src="img/printer4.png">
+        <h5>Printers</h5>
+        <p>Power: Yes except for the manual printer</p>
+        <p>Printers print money at varying speeds and require power. This is your main source of income aside from killing and raiding other players.</p>
+      </div>
+      <div>
+        <img src="img/healthBox.png">
+        <img src="img/healthBoxNonElectric.png">
+        <img src="img/healthPad.png">
+        <h5>Health</h5>
+        <p>Power: Yes except for the cheapest health box</p>
+        <p>Health boxes provide healing on a click, though only the electrified one recharges. Health pads provide an area of effect heal from its stored health</p>
+      </div>
+      <div>
+        <img src="img/storageCrate.png">
+        <img src="img/storageCrateSmall.png">
+        <img src="img/gangVault.png">
+        <h5>Storage</h5>
+        <p>Power: None</p>
+        <p>Items can be stored for safe keeping in storage crates, which vary in the amount of items they hold. A Gang Vault is different and only stores money.</p>
+      </div>
+      <div>
+        <img src="img/turret.png">
+        <h5>Defense</h5>
+        <p>Power: None</p>
+        <p>Turrets must be bought in the wrench menu. Placing a turret will defend your base from intruders not in your gang.</p>
+      </div>
+    </div>
+      
+    <h3>4. Raiding</h3>
+    <p>
+    After you're all setup and have some resources, it's time to do some raiding. A varied set of weapons is the best way to make sure you are successful in breaching a base without dying and losing your expensive weapons.
+    </p>
+
+    <h5>Melee Weapons</h5>
+    <p>
+    Melee weapons are the best way to take down a barracade. They're quick, deal a lot of damage, and cut through level 1 barracades like butter.
+    </p>
+
+    <h5>Guns</h5>
+    <p>
+    Carry one of these to defend yourself while trying to take down another persons base.
+    </p>
+
+    <h5>C4</h5>
+    <p>
+    C4 deals area of effect damage to barracades. Use this to cut through tons of barracades quickly and effectively. This is the easiest way to get into a base but also the most costly.
+    </p>
+
+    <p>
+    Once inside the base, you can smash money printers to get d0$h and free up city power. Or you could load up on items from your enemy's barrels.
+    </p>
+  </article>
+  <article class="commands">
+    <h2>Commands:</h2>
+
+    <table cellspacing="0" cellpadding="0"><tbody>
+      <tr><td>@help [message]</td><td>Talk in help chat</td></tr>
+      <tr><td>@admin [message]</td><td>secretly PM all admins</td></tr>
+      <tr><td>@[Name] [message]</td><td>PM someone</td></tr>
+      <tr><td>@pm [Name] [message]</td><td>PM someone</td></tr>
+    </tbody></table>
+
+    <h3>Gang commands:</h3>
+    <table cellspacing="0" cellpadding="0"><tbody>
+      <tr><td>/Gang</td><td>Show your gang's stats</td></tr>
+      <tr><td>/JoinGang</td><td>Joins a pending gang invitation.</td></tr>
+      <tr><td>/LeaveGang</td><td>Leave your current gang</td></tr>
+    </tbody></table>
+
+    <h3>Gang Commander commands:</h3>
+    <table cellspacing="0" cellpadding="0"><tbody>
+      <tr><td>/InviteToGang [Player Name]</td><td>Invite a player to your gang</td></tr>
+      <tr><td>/KickFromGang [Player Name]</td><td>Kicks a player from your gang</td></tr>
+    </tbody></table>
+
+    <h3>Gang Leader commands:</h3>
+    <table cellspacing="0" cellpadding="0"><tbody>
+      <tr><td>/RenameGang [Gang Name]</td><td>Sets your gang's name</td></tr>
+      <tr><td>/SetRank [Player Name] [Rank Name]</td><td>Set's a member's rank allowing them to use other commands. Rank must be either <code>Commander</code> or <code>Leader</code></td></tr>
+    </tbody></table>
+
+    <h3>Building commands:</h3>
+    <table cellspacing="0" cellpadding="0"><tbody>
+      <tr><td>/Put</td><td>Puts the item you're holding back into a barrel</td></tr>
+      <tr><td>/MakeDoor [Open Time in milliseconds]</td><td>Turns the barricade you're looking at into a gang-only door</td></tr>
+      <tr><td>/Repo</td><td>Deletes the machine you're looking at and gives you a portion of the money back</td></tr>
+      <tr><td>/PlaceMoney [Money Amount]</td><td>Places money directly on the ground as a brick</td></tr>
+    </tbody></table>
+
+    <h3>Tool commands:</h3>
+    <table cellspacing="0" cellpadding="0"><tbody>
+      <tr><td>/Hammer</td><td>Gives a Hammer</td></tr>
+      <tr><td>/Printer</td><td>Gives a Printer.</td></tr>
+      <tr><td>/Wrench</td><td>Gives a Wrench.</td></tr>
+      <tr><td>/DontSpawnWithTools</td><td>Toggles giving you default tools on spawn</td></tr>
+    </tbody></table>
+  </article>
+</main>
+</body>
+</html>
